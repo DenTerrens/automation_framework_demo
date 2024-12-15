@@ -11,13 +11,13 @@ pipeline {
             }
         }
 
-//         stage('Build') {
-//             steps {
-//                 // Build project using Maven
-//                 // this will trigger the tests automatically
-//                 bat 'mvn clean install'
-//             }
-//         }
+        stage('Build') {
+            steps {
+                // Build project using Maven
+                // this will trigger the tests automatically
+                bat 'mvn clean install'
+            }
+        }
 
         stage('Run Tests') {
             steps {
