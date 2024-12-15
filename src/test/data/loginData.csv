@@ -1,4 +1,4 @@
 invalidUser,SuperSecretPassword!,Your username is invalid!
 tomsmith,invalidPass,Your password is invalid!
-invalidUser,invalidPass,Your username is invalid!
+invalidUser,invalidPass,Invalid username (test)
 tomsmith,SuperSecretPassword!,You logged into a secure area!
