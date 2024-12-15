@@ -28,7 +28,7 @@ pipeline {
         stage('Allure Report') {
             steps {
                 // Generate Allure test reports
-                allure includeProperties: false, results: [[path: 'allure-results']]
+                bat 'allure generate allure-results --clean -o allure-report'
             }
         }
 
