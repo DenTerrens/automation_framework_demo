@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        // env
+        BROWSER = 'chrome'
     }
     stages {
         stage('Checkout') {
