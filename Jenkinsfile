@@ -21,7 +21,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run the Selenium tests using TestNG
-                sh 'mvn test -Dbrowser=${BROWSER}'
+                bat 'mvn test -Dbrowser=${BROWSER}'
             }
         }
 
