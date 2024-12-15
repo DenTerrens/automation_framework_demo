@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        BROWSER = 'chrome' // Or firefox, depending on the tests
+        // env
     }
     stages {
         stage('Checkout') {
@@ -21,7 +21,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run the Selenium tests using TestNG
-                bat 'mvn test -Dbrowser=${BROWSER}'
+                bat 'mvn test'
             }
         }
 
